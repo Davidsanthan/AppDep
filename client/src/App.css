@@ -1,0 +1,58 @@
+
+form{
+  background-color: rgba(156, 166, 203, 0.495);
+  width: 450px;
+  margin: 50px;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  border-radius: 20px;
+  border: 1px solid black;
+}
+label{
+  display: flex;
+  margin: 10px;
+  font-size: x-large;
+}
+input{
+  width: 200px;
+  border-radius: 5px;
+}
+input:hover{
+  background-color: rgb(221, 220, 220);
+  border-radius: 10px;
+}
+
+button{
+  border-radius: 5px;
+  background-color: azure;margin: 10px;
+}
+button:hover{
+  border-radius: 10px;
+  background-color: gainsboro;
+}
+.profilepic{
+  width: 100px;
+  height: 50px;
+  border: 2px solid gray;
+}
+.App{
+  text-align: center;
+}
+a{
+  font-size: 25px;
+  font-family: 'Times New Roman', Times, serif;
+  text-decoration: none;
+  
+  border-radius: 5px;
+}
+a:hover{
+  background-color: gray;
+  color: white;
+  font-size: 29px;
+}
+nav{
+  background-color: azure;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
