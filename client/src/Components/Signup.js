@@ -70,7 +70,7 @@ function Signup() {
       method:"Post",
       body:dataToSend
     };
-    let JSONData=await fetch("http://localhost:1234/signup",reqOption);
+    let JSONData=await fetch("/signup",reqOption);
     let JSOData= await JSONData.json();
     if (JSOData.status=="Success") {
       alert(JSOData.msg);

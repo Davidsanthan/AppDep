@@ -6,6 +6,7 @@ const multer=require("multer");
 const jwt=require("jsonwebtoken");
 const bcrypt=require("bcrypt");
 const dotenv=require("dotenv");
+const path =require("node:path");
 dotenv.config();
 // line 6 to line 15 we will get from expressjs.com website as disk storage
 const storage = multer.diskStorage({
@@ -24,6 +25,7 @@ app.use(express.json());
 app.use(express.urlencoded());
 // app.use('/uploads',express.static('uploads')); is used to give access to the images in uploads folder to show in UI
 app.use('/uploads', express.static('uploads'));
+app.use("client/build",express.static(path.join(__dirname,"./client/build")));
 app.listen(process.env.port,()=>{
     console.log(`Listening To Port ${process.env.port}`);
  })

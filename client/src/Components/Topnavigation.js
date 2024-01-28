@@ -23,7 +23,7 @@ useEffect(()=>{
         let reqOption={
             method:"DELETE",
         };
-        let url=`http://localhost:1234/deleteprofile?email=${storeObj.loginReducer.loginDetails.email}`;
+        let url=`/deleteprofile?email=${storeObj.loginReducer.loginDetails.email}`;
      let JSONData=await fetch(url,reqOption);
      let JSOData=await JSONData.json();
      if(JSOData.status=="success"){

@@ -14,7 +14,7 @@ return store
         <Topnavigation/>
         <h1>Home</h1>
         <h3>🎉Welcome {storeObj.loginReducer.loginDetails.firstName} {storeObj.loginReducer.loginDetails.lastName}🎉</h3>
-        <img src={`http://localhost:1234/${storeObj.loginReducer.loginDetails.profilepic}`}></img>
+        <img src={`/${storeObj.loginReducer.loginDetails.profilepic}`}></img>
     </div>
   )
 }

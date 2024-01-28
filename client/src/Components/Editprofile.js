@@ -12,7 +12,7 @@ function Editprofile() {
             lastNameRef.current.value=storeObj.loginReducer.loginDetails.lastName;
             ageRef.current.value=storeObj.loginReducer.loginDetails.age;
             emailRef.current.value=storeObj.loginReducer.loginDetails.email;
-            setProfilePicPath(`http://localhost:1234/${storeObj.loginReducer.loginDetails.profilepic}`);
+            setProfilePicPath(`/${storeObj.loginReducer.loginDetails.profilepic}`);
           },[])
     let firstNameRef=useRef();
   let lastNameRef=useRef();
@@ -83,7 +83,7 @@ function Editprofile() {
       method:"Put",
       body:dataToSend
     };
-    let JSONData=await fetch("http://localhost:1234/updateProfile",reqOption);
+    let JSONData=await fetch("/updateProfile",reqOption);
     let JSOData= await JSONData.json();
     if (JSOData.status=="Success") {
       alert(JSOData.msg);
