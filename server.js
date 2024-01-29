@@ -25,7 +25,7 @@ app.use(express.json());
 app.use(express.urlencoded());
 // app.use('/uploads',express.static('uploads')); is used to give access to the images in uploads folder to show in UI
 app.use('/uploads', express.static('uploads'));
-app.use("client/build",express.static(path.join(__dirname,"./client/build")));
+app.use("./client/build",express.static(path.join(__dirname,"./client/build")));
 app.listen(process.env.port,()=>{
     console.log(`Listening To Port ${process.env.port}`);
  })
